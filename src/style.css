@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: #0A64EC;
+  color: #FFFFFF;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  background-color: #FFF3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  width: auto;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover, :focus {
+  transform: scale(1.125);
+}
+
+#back-btn {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin: 1rem 0 0 1rem;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+}
+
+#search-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+#location-search {
+  padding: 1.25rem;
+  width: 70%;
+  border: none;
+  border-left: 4px solid #FFF;
+  border-radius: 0 .25rem .25rem 0;
+  background-color: #FFF1;
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #FFF;
+}
+
+#location-search:focus {
+  outline: none;
+}
+
+#location-search::placeholder {
+  color: #FFF7;
+  font-family:'Montserrat';
+}
+
+#search-btn {
+  padding: 1.25rem;
+}
+
+.country {
+  font-family: "Contrail One", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+#banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#weather-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 3rem;
+}
+
+#weather-info .weather-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.temp-symbol {
+  font-size: 1rem;
+}
+
+.illustrate-icon {
+  width: 100px;
+  height: 100px;
+}
+
+#f-section {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  scrollbar-color: #FFF;
+  scrollbar-width: thin;
+}
+
+.f-card {
+  width: 180px; /* Fixed width */
+  height: 240px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: .25rem;
+  padding: 1rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#weather-comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .375rem;
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+  }
+
+  #location-search {
+    width: 50%;
+  }
+
+  #banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 3rem;
+  }
+
+  #weather-data {
+    margin-top: 2rem;
+  }
+
+  #weather-info {
+    margin-top: 6rem;
+    font-size: 120px;
+    line-height: 16px;
+  }
+  
+  #weather-info .weather-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .temp-symbol {
+    font-size: 4rem;
+  }
+  
+  .illustrate-icon {
+    height: 200px;
+    width: 200px;
+  }
+  
+  #f-section {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    scrollbar-color: #FFF;
+    scrollbar-width: thin;
+  }
+  
+  .f-card {
+    width: 160px; /* Fixed width */
+    height: 200px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: .25rem;
+    padding: 1rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  #weather-comments {
+    border-left: 2px solid #fff4;
+  }
+}
