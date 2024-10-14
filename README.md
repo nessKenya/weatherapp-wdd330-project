@@ -1,4 +1,4 @@
-##This App:
+## This App:
 - Checks weather for different cities
 - Provides a week's forecast
 - Suggests how one should dress based on temperature
