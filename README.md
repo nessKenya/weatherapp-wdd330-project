@@ -4,5 +4,5 @@
 - Suggests how one should dress based on temperature
 
 
-  [Site Link] - {https://weatherappwdd330.netlify.app/}
+  [Site Link] - (https://weatherappwdd330.netlify.app/)
   
