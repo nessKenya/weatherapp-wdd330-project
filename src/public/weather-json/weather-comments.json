@@ -1,9 +1,9 @@
 {
-  "Thunderstorm" : ["Thunderstorm comment.", "/home.png"],
-  "Drizzle": ["Drizzle comment.", "/jacket.png"],
-  "Rain": ["Rain comment.", "/umbrella.png"],
-  "Snow": ["Snow comment", "/gloves.png"],
-  "Clear": ["Clear comment.", "/tshirt.png"],
-  "Clouds": ["Clouds comment.", "/sweater.png"],
-  "7XX": ["Unusuall weather comment.", "/tshirt.png"]
+  "Thunderstorm" : ["Thunderstorm, stay at home!", "/home.png"],
+  "Drizzle": ["You might need a Jacket.", "/jacket.png"],
+  "Rain": ["Rain, carry umbrella!", "/umbrella.png"],
+  "Snow": ["Snow, put on gloves!", "/gloves.png"],
+  "Clear": ["Good weather, light clothing!", "/tshirt.png"],
+  "Clouds": ["Consider wearing a sweater.", "/sweater.png"],
+  "7XX": ["Unusuall weather.", "/tshirt.png"]
 }
