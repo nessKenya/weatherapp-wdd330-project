@@ -18,12 +18,24 @@ export function setLocalStorage(key, data) {
   localStorage.setItem(key, JSON.stringify(data));
 }
 
-export const generateComment = async (indicator) => {
+export const generateComment = async (indicator, temperature) => {
   try {
     const weatherComments = await fetch(
       "/weather-json/weather-comments.json",
     ).then(converToJson);
-    return weatherComments[indicator];
+    if (indicator === "Clouds" || indicator === "Clear") {
+      if (temperature < 15) {
+        return weatherComments["15"];
+      } else if (temperature < 20) {
+        return weatherComments["20"];
+      } else if (temperature < 27) {
+        return weatherComments["27"];
+      } else {
+        return weatherComments["Hot"];
+      }
+    } else {
+      return weatherComments[indicator];
+    }
   } catch (e) {
     throw new Error(e);
   }

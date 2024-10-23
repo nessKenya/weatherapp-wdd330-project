@@ -59,6 +59,7 @@ async function showWeatherForecast(forecastData, day) {
 
   const [comment, commentImage] = await generateComment(
     forecastData.list[day].weather[0].main,
+    forecastData.list[day].main.temp,
   );
 
   const weatherCommentsData = {

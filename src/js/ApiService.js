@@ -11,14 +11,12 @@ async function convertToJson(res) {
 export default class ApiService {
   async getWeatherForecastCoords(lat, lon) {
     const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
-    console.log(url);
     const response = await fetch(url).then(convertToJson);
     return response;
   }
 
   async getWeatherForecastCity(city) {
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${API_KEY}`;
-    console.log(url);
     const response = await fetch(url).then(convertToJson);
     return response;
   }
